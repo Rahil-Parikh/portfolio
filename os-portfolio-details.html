@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Advanced OS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class=" portfolio-info">
+            <h1 align="center">Advanced Operating System Development with xv6</h1>
+            <ul>
+              <li><strong>Category</strong>: Operating System Internals</li>
+              <li><strong>Languages</strong>: C, Assembly</li>
+              <li><strong>Project date</strong>: March, 2023</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/Rahil-Parikh/operating_system_xv6/tree/main">https://github.com/Rahil-Parikh/operating_system_xv6</a></li>
+            </ul>
+
+            <h2>Description:</h2>
+            <p>This project centers around advancing operating system development using the xv6 kernel tailored for the
+              RISC-V architecture. It entails the implementation of crucial components like Boot Rom and Bootloader,
+              Process Memory Management, User-Level Thread Management, and Trap and Emulate Virtualization. Each
+              component's implementation is segregated into distinct branches within the repository.</p>
+
+            <h2>Objective:</h2>
+            <p>The objective of this project is to provide a hands-on platform for learning and experimentation with
+              operating system development principles utilizing the xv6 kernel. It presents a structured approach to
+              comprehend and deploy fundamental OS functionalities, fostering a deeper comprehension of system-level
+              programming and OS internals.</p>
+
+            <h2>Boot ROM and Bootloader:</h2>
+            <ul>
+              <li>Developed a custom bootloader for the xv6 OS kernel, leveraging QEMU for system emulation.</li>
+              <li>Configured hardware settings to ensure optimal OS operation.</li>
+              <li>Implemented functionality to load the appropriate OS based on user configuration.</li>
+              <li>Provided the OS with system configuration information, such as the bootloader binary's starting
+                address.</li>
+            </ul>
+
+            <h2>Process Memory Management in xv6:</h2>
+            <ul>
+              <li>Implemented on-demand paging for process memory management, addressing page faults.</li>
+              <li>Modified the static page allocation mechanism to accommodate dynamic page loading.</li>
+              <li>Wrote a page fault handler to intercept and load pages upon occurrence of page faults.</li>
+              <li>Enabled on-demand loading of program binary contents and heap memory utilization.</li>
+              <li>Implemented page swapping to disk during page faults for efficient memory usage.</li>
+            </ul>
+
+            <h2>Trap and Emulate Virtualization:</h2>
+            <ul>
+              <li>Designed a virtual machine using the "trap and emulate" approach.</li>
+              <li>Executed user-level instructions directly within the virtual machine, while trapping supervisor-level
+                instructions.</li>
+              <li>Initialized privileged virtual machine state and tracked VM execution.</li>
+              <li>Redirected trapped instructions to the virtual machine monitor (VMM) for emulation.</li>
+              <li>Emulated privileged instructions and maintained privileged state, including critical registers.</li>
+              <li>Implemented emulation of physical memory protection (PMP) for enhanced security.</li>
+            </ul>
+
+            <h2>Conclusion:</h2>
+            <p>By delving into the intricacies of advanced OS development concepts collaboratively, this project
+              delivers a comprehensive learning journey. It equips participants with the requisite knowledge and skills
+              to navigate intricate OS architectures and contribute innovatively to the field's advancements.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

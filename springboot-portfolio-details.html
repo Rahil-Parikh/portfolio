@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Advanced OS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class=" portfolio-info">
+            <h1 align="center">Ecommerce Backend Spring Boot Application</h1></span></p>
+            <ul>
+              <li><strong>Category</strong>: App</li>
+              <li><p><strong>Skills</strong>: <a href="https://spring.io/" title="Spring Boot"><img src="https://img.shields.io/badge/SpringBoot-white?style=for-the-badge&logo=Springboot&logoColor=green" alt="" /></a><a href="https://maven.apache.org/" title="Maven"><img src="https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="" /></a><a href="https://www.postgresql.org/" title="Postgrsql"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" /></a><a href="https://www.docker.com/" title="Docker"><img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="" /></a><a href="https://www.jenkins.io/" title="Jenkins"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white" alt="" /></a><a href="https://www.postman.com/" title="Postman"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="" /></a>
+              </li>
+              <li><strong>Project date</strong>: Nov, 2022</li>
+              <li><strong>Project URL</strong>: <a
+                  href="https://github.com/Rahil-Parikh/Ecommerce-backend/tree/main">https://github.com/Rahil-Parikh/Ecommerce-backend</a>
+              </li>
+            </ul>
+
+            <h2>Description:</h2>
+
+            <p><img style="width:80px;" src="https://e4developer.com/wp-content/uploads/2018/01/spring-boot.png" /> Java
+              Springboot backend for production grade ecommerce enterprise.
+              The project contains modules for <strong>Authentication, Inventory Management, Shopping Cart, Wish List,
+                Ordering, Delivery Status and Payment Gateway using RazorPay</strong></p>
+
+            <h2>Authentication</h2>
+
+            <p>Cookie based Authentication. Two-step email based Registration. Only two roles define
+              <em>ADMIN<em>ROLE</em> and <em>USER</em>ROLE</em>. Admin has certain priviliges which a generic user
+              doesn't. The admin privilidges are to manage inventory, look at user details, user authority, shopping
+              cart, wishlist, orders, payment status, delivery status of all users </p>
+
+            <h2>Inventory Management</h2>
+
+            <p>Products can be added and deleted one at a time and in a list. The product can be updated one at a time.
+              Addition of products with Excel Sheets</p>
+
+            <h2>Shopping Cart & WishList</h2>
+
+            <p>Crud based operation for Shopping Cart and Wish List. Same product with different product attributes can
+              be to Shopping Cart but not the Wish List</p>
+
+            <h2>Ordering and Delivery Status</h2>
+
+            <p>A product attempted to buy is added to the list of Orders and the payment status determines a successful
+              order. Delivery Status is updated to Received, Packaging , Dispatched or Delivered.</p>
+
+            <h2>Payment Gateway</h2>
+
+            <p>Razorpay gateway is used for making payments and keeping track of payment status</p>
+
+            <h2>Postgresql Database Schema <a href="https://www.postgresql.org/" title="Postgrsql"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" /></a></h2>
+
+            <p><img
+              style="width:100%;"
+                src="https://user-images.githubusercontent.com/46090098/189498678-6d610fd4-cee7-4172-a3e5-d8730c9edf7f.png"
+                alt="database schema" /></p>
+
+            <h2>Docker <img style="width:30px;"
+                src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" /></h2>
+
+            <p>The <em>Dockerfile</em> builds a containerized application for the build version of maven project.
+              <em>docker-compose.yml</em> file defines the building a container from database image and also building
+              springboot backend container using the <em>Dockerfile</em> defined in the folder
+            </p>
+
+            <h2>Jenkins <img style="width:30px;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" />
+            </h2>
+
+            <p>The <em>Jenkinsfile</em> builds the entire project on the local machine with <b>Maven</b> and builds
+              multi-container image for docker application using <b>Compose</b>. Once the images are build, they are
+              pushed to the jfrog artifactory with latest tags. On the server machine, it pulls the latest tagged images
+              and runs the the multi-container docker application on the server.
+              <br />
+              <br />
+              <i>Refer another similar ecommerce flutter and firebase based application <a
+                  href="https://github.com/Rahil-Parikh/Ecommerce-market">here</a></i><br />
+              <b>Note : This project is tailored to a <a href="https://tinyurl.com/369572us">jewelry ecommerce
+                  website</a> with products having attributes similar to jewelry products</b>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

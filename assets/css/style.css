@@ -505,8 +505,56 @@ section .container {
   /* opacity: 0; */
   /* animation: reveal 5s forwards var(--delay); */
 }
-.skill-category img{
+.tech-icon{
   height: 20px;
+  margin: 0 5px;
+
+  /* display :block; */
+}
+
+.tech-skill{
+  font-family: "Liberation Mono";
+  display :block;
+  border-radius: 25px;
+  transition: background-color 0.5s ease-out;
+}
+
+.tech-skill-last{
+  display :block;
+  border-radius: 25px;
+  transition: background-color 0.5s ease-out;
+  transition: text-align 1s linear;
+}
+.tech-skill-last:hover {
+  background-color: #3737379e;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.tech-skill:hover {
+  transform: scale(1.2);
+  background-color: #ffffffc1;
+  text-align: center;
+  color:black;
+  width: 150px;
+  cursor: pointer;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.skill-category {
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.skills>div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.skill-category>div >div{
+  width: 200px;
+  display: table-cell;
+  /* background-color: #15bb62;
+  border:  5px solid red; */
 }
 /* .paragraph span{
   display : block; 
@@ -537,9 +585,28 @@ section .container {
   margin: 0;
   font-size: 16px;
 } */
-.skill-category h4{
+.skill-category h4 , .skill-category-last h4{
   color: #18d26e;
+  display: inline-block;
+  position: relative;
 }
+.skill-category h4:after , .skill-category-last h4:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.skill-category h4:hover:after, .skill-category-last h4:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -548,7 +615,7 @@ section .container {
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
+  margin: 10px 0;
   margin: 0;
   text-transform: uppercase;
   display: block;
@@ -1015,11 +1082,11 @@ section .container {
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .portfolio-details .portfolio-info ul {
-  list-style: none;
+  list-style: circle;
   padding: 0;
   font-size: 15px;
 }
